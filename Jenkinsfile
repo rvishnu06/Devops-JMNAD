@@ -4,7 +4,7 @@ pipeline{
     tools {
         maven 'maven'
     }
-    environment {
+    environment{
         artifactId = readMavenPom().getartifactId()
         version  =  readMavenPom().getversion()
     }
