@@ -4,7 +4,7 @@ pipeline{
     tools {
         maven 'maven'
     }
-    
+
     }
     stages {
         // Specify various stage with in stages
@@ -89,8 +89,4 @@ version: '0.0.1-SNAPSHOT'
         }
 
 */
-
-
-    }
-
 }
