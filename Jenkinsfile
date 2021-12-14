@@ -34,11 +34,12 @@ pipeline{
                 }
             }
         // Stage4 :Print Info
-        stage ('Print Env Info')
+        stage ('Print Env Info') {
                steps {
                    echo "Artifact ID '${ArtifactId}'"
                    echo "Version is '${Version}' "
                }
+           }
     }
 
 }
