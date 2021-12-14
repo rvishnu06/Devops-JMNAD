@@ -5,9 +5,9 @@ pipeline{
         maven 'maven'
     }
     environment {
-        ArtifactId = readMavenPom().getArtifactID()
-        Version  =  readMavenPom().getVersion()
-        Name = readMavenPom().getName()
+        artifactId = readMavenPom().getartifactId()
+        version  =  readMavenPom().getversion()
+        name = readMavenPom().getname()
     }
     stages {
         // Specify various stage with in stages
@@ -36,7 +36,7 @@ pipeline{
         // Stage4 :Print Info
         stage ('Print Env Info') {
                steps {
-                   echo "Artifact ID '${ArtifactId}'"
+                   echo "Artifact ID '${artifactId}'"
                    echo "Version is '${Version}' "
                }
            }
