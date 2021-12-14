@@ -40,8 +40,7 @@ pipeline{
                 repository: 'VishnuDevops-lab-release',
                 version: '0.0.01'
                 }
-          }
-
+            }
+            
     }
-
 }
