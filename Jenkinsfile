@@ -26,7 +26,7 @@ pipeline{
         // Stage 3: Push to Nexus
         stage ('Deploy to Nexus') {
             steps {
-            nexusArtifactUploader artifacts: [[artifactId: 'VinayDevOpslab', classifier: '', file: 'target/VinayDevOpslab-0.0.01.war', type: 'war']], credentialsId: 'd005804b-0f90-4357-8173-ecf3185a532e', groupId: 'com.vinaysdevopslab', nexusUrl: '13.58.170.220:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'VinayDevops-Release', version: '0.0.01'
+            nexusArtifactUploader artifacts: [[artifactId: 'VinayDevOpslab', classifier: '', file: 'target/VinayDevOpslab-0.0.02.war', type: 'war']], credentialsId: 'd005804b-0f90-4357-8173-ecf3185a532e', groupId: 'com.vinaysdevopslab', nexusUrl: '13.58.170.220:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'VinayDevops-Release', version: '0.0.02'
             }
         }
 
@@ -41,4 +41,4 @@ pipeline{
 
 
     }
- }
+}
