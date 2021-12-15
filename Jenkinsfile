@@ -5,7 +5,6 @@ pipeline{
         maven 'maven'
     }
 
-    }
     stages {
         // Specify various stage with in stages
 
@@ -23,4 +22,12 @@ pipeline{
 
             }
         }
+
+        // Stage 3: Push to Nexus
+        stage ('Deploy to Nexus') {
+            steps {
+              echo 'Deploy'
+            }
+        }
+    }
  }
